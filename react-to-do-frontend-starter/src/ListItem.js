@@ -1,9 +1,9 @@
-const ListItem = ({title, done, id, handleDeleteTodo}) => {
+const ListItem = ({title, done, id, handleDeleteTodo, handleUpdateTodo}) => {
     return (
         <>
             <li>
                 {title}
-                <input type="checkbox" defaultChecked={done}/>
+                <input type="checkbox" checked={done ? "checked" : ""} onChange={(e) => handleUpdateTodo(e, id)}/>
                 <button onClick={(e) => handleDeleteTodo(e, id)}>X</button>
             </li>
         </>
