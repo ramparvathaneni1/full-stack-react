@@ -80,6 +80,30 @@ function MyList() {
             console.log(error);
         }
     }
+
+    async function deleteTodo(e, id) {
+        e.preventDefault();
+
+        const options = {
+            method: "DELETE",
+            headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json",
+            },
+        };
+        try {
+            const response = await fetch(
+                `http://127.0.0.1:3001/api/todos/${id}`,
+                options
+            );
+            let newToDoItemArray = [...toDoItemArray];
+            let itemToDelete = newToDoItemArray.findIndex((item) => item.id === id);
+            newToDoItemArray.splice(itemToDelete, 1);
+            setToDoItemArray(newToDoItemArray);
+        } catch (error) {
+            console.log(error);
+        }
+    }
 }
 
 export default MyList;
