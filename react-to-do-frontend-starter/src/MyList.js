@@ -6,7 +6,11 @@ function MyList() {
     const [newItem, setNewItem] = useState("");
 
     const todoItems = toDoItemArray.map((item) => (
-        <ListItem {...item} key={item.id} handleDeleteTodo={deleteTodo}/>
+        <ListItem {...item}
+                  key={item.id}
+                  handleDeleteTodo={deleteTodo}
+                  handleUpdateTodo={updateTodo}
+        />
     ));
 
     // We declare a named function called getTodos()
