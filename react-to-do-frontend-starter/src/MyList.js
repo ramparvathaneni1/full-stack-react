@@ -40,13 +40,7 @@ function MyList() {
                     onChange={(e) => setNewItem(e.target.value)}
                     value={newItem}
                 />
-                <button
-                    onClick={(e) => {
-                        e.preventDefault();
-                        setToDoItemArray([...toDoItemArray, newItem]);
-                        setNewItem("");
-                    }}
-                >
+                <button onClick={createTodo}>
                     Add it!
                 </button>
             </form>
