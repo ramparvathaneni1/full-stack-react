@@ -18,8 +18,7 @@
    command: `psql -U postgres -d todo_app_db < db/todo.sql`.
 9. To add dependencies to our project, use the `npm install` command followed by the package names you want to install.
    In our case, `npm i cors express pg nodemon`.
-10. To open the express-todo-api project in VSCode, use the command code. Once the project is open, you can start the
-    server by running `npm run start`. The server is configured to listen on port `3001`.
+10. To open the express-todo-api project in VSCode, use the command `code .`. After opening the project, you can initiate the server by opening the VS Code terminal and executing the command `npm run start`. The server is set up to listen on port `3001`.
 
 NOTE: If you get a message that a port is in use, you can kill it with this
 command: `sudo kill -9 $(sudo lsof -t -i:3000)`.
