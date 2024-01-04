@@ -15,7 +15,7 @@
 7. To change your current working directory to `express-todo-api` within the cloned `full-stack-react` repository, you
    can use the following commands: `cd full-stack-react/express-todo-api/`.
 8. To reset the existing database using the `psql` command, you can use the following
-   command: `psql -U postgres -d todo_app_db < /db/express-todo-api/todo.sql`.
+   command: `psql -U postgres -d todo_app_db < /db/todo.sql`.
 9. To add dependencies to our project, use the `npm install` command followed by the package names you want to install.
    In our case, `npm i cors express pg nodemon`.
 10. To open the express-todo-api project in VSCode, use the command code. Once the project is open, you can start the
