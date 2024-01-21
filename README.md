@@ -31,7 +31,7 @@ command: `sudo kill -9 $(sudo lsof -t -i:3000)`.
 Let's open the Postman Collection that is provided (or that you built in class) to review the 5 API Todo endpoints.
 
 1. Open Postman: Run `/opt/Postman/app/Postman` in the terminal
-2. The collection should already be available in Postman. If it's not, you can select "Open existing file" then locate the
+2. The collection should already be available in Postman. If it's not, you can select "Import" then locate the
    `todo_app.postman_collection.json` file in the `express-to-do-api` folder.
 
 Once we've reviewed and confirmed that the backend is functioning correctly, we can shift our attention to the React
